@@ -27,11 +27,11 @@ public class Main {
         } else if ((num2 > num1) && (num2 > num3)){
             mayor = num2;
             if (num1>num3){
-                medio = num2;
+                medio = num1;
                 menor = num3;
             } else {
                 medio = num3;
-                menor = num2;
+                menor = num1;
             }
         } else if ((num3 > num2) && (num3> num1)){
             mayor = num3;
