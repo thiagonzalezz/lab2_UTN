@@ -3,7 +3,7 @@ package Recursion;
 public class DivisionConRestas {
 
     //Restas sucesivas de forma recursiva
-    public int restasSucesivas(int num1, int num2){
+    public static int restasSucesivas(int num1, int num2){
         if (num1 < num2){
             return 0;
         }
@@ -12,7 +12,7 @@ public class DivisionConRestas {
     }
 
     //Restas sucesivas de forma iterativa
-    public float restasSucesivas(float num1, float num2){
+    public static float restasSucesivas(float num1, float num2){
         int cociente = 0;
         while(num1>=num2){
             num1 -= num2;
@@ -23,14 +23,12 @@ public class DivisionConRestas {
 
     public static void main (String[] args){
 
-        // Creacion del objeto para que se puedan utilizar las funciones de division
-        DivisionConRestas r = new DivisionConRestas();
 
         // Instancia de la funcion recursiva
-        int resultado1 = r.restasSucesivas(20, 5);
+        int resultado1 = restasSucesivas(20, 5);
 
         //Instancia de la funcion iterativa
-        int resultado2 = r.restasSucesivas(20, 5);
+        int resultado2 = restasSucesivas(20, 5);
 
 
         System.out.println(resultado1);
