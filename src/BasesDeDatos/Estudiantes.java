@@ -9,6 +9,13 @@ public class Estudiantes {
         String url = "jdbc:mariadb://localhost:33061/universidad";
         String usuario = "root";
         String pass = "";
+        try{
+            Class.forName("org.mariadb.jdbc.Driver");
+
+
+        }catch (ClassNotFoundException ex) {
+            System.out.println("Error en la conexion.");
+        }
 
 
         try {
